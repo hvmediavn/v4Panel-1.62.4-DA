@@ -1,8 +1,8 @@
-# v4Panel-1.62.4
+# v4Panel-1.62.4-DirectAdmin
 DirectAdmin Nulled - v4Panel
 #### Install:
 ```
-yum -y install nano wget perl;wget --no-check-certificate https://raw.githubusercontent.com/puarudz/v4Panel-1.62.4/main/setup.sh;chmod +x setup.sh;sed -i 's/\r//' setup.sh;./setup.sh
+yum -y install nano wget perl;wget --no-check-certificate https://raw.githubusercontent.com/hvmediavn/v4Panel-1.62.4-DA/main/setup.sh;chmod +x setup.sh;sed -i 's/\r//' setup.sh;./setup.sh
 ```
 #### Nulled:
 ```
