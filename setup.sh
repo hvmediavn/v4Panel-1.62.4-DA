@@ -69,7 +69,7 @@ if [ "$1" = "beta" ] || [ "$2" = "beta" ]; then
 	DOWNLOAD_BETA=true
 fi
 
-FTP_HOST=free-da.vsicloud.com
+FTP_HOST=directadmin.huanvm.com
 if [ "$OS" = "FreeBSD" ]; then
 	WGET_PATH=/usr/local/bin/wget
 else
@@ -221,7 +221,7 @@ else
 	B64=`uname -m | grep -c 64`
 	if [ "$B64" -gt 0 ]; then
 		echo "*** 64-bit OS ***";
-		echo "*** SCRIPT INSTALL DA 1.64.2 NULLED BY PUARUVN ***";
+		echo "*** SCRIPT INSTALL DA 1.64.2 NULLED BY HUANVM ***";
 		sleep 2;
 		B64=1
 	fi
@@ -260,7 +260,7 @@ SCRIPTS_PATH=$DA_PATH/scripts
 PACKAGES=$SCRIPTS_PATH/packages
 SETUP=$SCRIPTS_PATH/setup.txt
 
-SERVER=http://free-da.vsicloud.com/services
+SERVER=http://directadmin.huanvm.com/services
 BFILE=$SERVER/custombuild/${CB_VER}/custombuild/build
 CBPATH=$DA_PATH/custombuild
 BUILD=$CBPATH/build
@@ -512,8 +512,8 @@ if [ "$CMD_LINE" -eq 1 ] || [ "${AUTO}" -eq 1 ]; then
 else
 	echo "*****************************************************";
 	echo "*";
-	echo "* DirectAdmin NULLED 1.64.2:";
-	echo "*   https://www.facebook.com/ptp.puaruvn/";
+	echo "* DirectAdmin Nulled 1.64.2:";
+	echo "*   https://www.facebook.com/huanvm.vn/";
 	echo "*";	
 
 	echo "*";
@@ -1626,11 +1626,11 @@ if [ "$OS" = "debian" ]; then
 
 		echo "*******************";
 		echo "";
-		echo "wget does not support https.  Downloading a new wget for you from http://free-da.vsicloud.com/services/debian_${OS_VER}/wget";
+		echo "wget does not support https.  Downloading a new wget for you from http://directadmin.huanvm.com/services/debian_${OS_VER}/wget";
 		echo "";
 		echo "*******************";
 
-		$BIN_DIR/wget -O $BIN_DIR/wget2 http://free-da.vsicloud.com/services/debian_${OS_VER}/wget
+		$BIN_DIR/wget -O $BIN_DIR/wget2 http://directadmin.huanvm.com/services/debian_${OS_VER}/wget
 		RET=$?
 		if [ $RET -eq 0 ]; then
 			mv $BIN_DIR/wget $BIN_DIR/wget.orig
@@ -1644,7 +1644,7 @@ if [ "$OS" = "debian" ]; then
 			echo "wget does not appear to be functioning with https.";
 			echo "run the following to get a new wget binary:";
 			echo "  cd /usr/bin";
-			echo "  wget -O wget2 http://free-da.vsicloud.com/services/debian_${OS_VER}/wget";
+			echo "  wget -O wget2 http://directadmin.huanvm.com/services/debian_${OS_VER}/wget";
 			echo "  mv wget wget.orig";
 			echo "  mv wget2 wget";
 			echo "  chmod 755 wget";
